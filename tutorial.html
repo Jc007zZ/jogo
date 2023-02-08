@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @charset "UTF-8";
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        display: block;
+        margin-top: 20px;
+        margin: auto;
+        background-color: black;
+        height: 60vh;
+        max-width: 400px;
+      }
+
+      aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        margin: 30px 0 30px 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+       width: 198px;
+        padding: 15px 50px;
+        border-radius: 10px;
+        background-color: rgb(20, 20, 20);
+        color: white;
+      }
+      p {
+        margin-top: 20px;
+        color: white;
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: start;
+      }
+
+      img {
+        position: absolute;
+        display: inline;
+        width: 60px;
+        top: 0%;
+        right: 0%;
+        margin-right: 30px;
+        margin-top: 10px;
+        transition: 0.3s;
+      }
+
+      img:hover {
+        width: 65px;
+        top: -0.3%;
+        right: 0.3%;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a h1 {
+        transition: 0.5s;
+        text-align: center;
+      }
+
+      a h1:hover {
+        transform: translate(-3%, -3%);
+        background-color: rgba(37, 37, 37, 0.822);
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.301),
+          -1px -1px 10px rgba(255, 255, 255, 0.301);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <aside>
+      <h1>Como funciona?</h1>
+      <p>
+        O jogo ira gerar um numero aleatorio e você deve tentar acertar com o
+        minimo de tentativas possiveis
+      </p>
+      <h1>Como ganha?</h1>
+      <p>Acertando qual é o numero aleatorio</p>
+      <a href="index.html">
+        <h1>Jogar</h1>
+      </a>
+    </aside>
+  </body>
+</html>

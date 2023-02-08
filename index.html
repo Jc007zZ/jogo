@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Chute</title>
+</head>
+<body>
+
+    <form id="formDificuldade">
+        <div class="dificuldade">
+           <span class="botao" onclick="geradorAleatorio('easy')">fácil</span>
+            <span class="botao" onclick="geradorAleatorio('normal')">Normal</span>
+             <span class="botao" onclick="geradorAleatorio('hard')">Dificil</span>
+        </div>
+      <a href="tutorial.html"><p class="botao">Como jogar</p></a>
+    </form>
+
+
+    <div class="game">
+        <form id="formGame" >
+           <label for="chute"> teste</label>
+           <p id="dica"></p>
+                <input type="text" id="chute" placeholder="Chute o numero" autocomplete="off" required>
+               <input type="button" id="jogarDnv" class="boton" value="Jogar de novo">
+               <input type="button"  class="boton" value="enviar">
+               <p id="iTentativas"></p>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/fundo.png);
+    width: 99vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+#formDificuldade {
+    /* display flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 0 20px 0 20px;
+    width: 520px;
+    height: 520px;
+    border-radius: 3%;
+}
+
+#formDificuldade p {
+
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+div.dificuldade {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+
+div.dificuldade span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+div.game {
+    /* flex */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 3%;
+}
+
+
+
+#formGame {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border: 1px solid black;
+    outline: 1px solid rgba(128, 128, 128, 0);
+    border-radius: 5px;
+    scale: 1.2;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10%;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.botao:hover {
+    transform: translate(-3%, -3%);
+    background-color: rgba(0, 0, 0, 0.822);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.116), -1px -1px 10px rgba(255, 255, 255, 0.116);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ .boton {
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.438) ;
+    transition: 0.5s;
+    scale: 1.4;
+}
+
+.boton:hover  {
+    scale: 1.6;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.288), -1px -1px 10px rgba(255, 255, 255, 0.267);
+}
+
+#jogarDnv  {
+
+    display: none;
+}
+
+
+
+@media (max-width:540px) {
+
+    div.dificuldade span {
+        width: 26vw;
+    }
+
+    form, div.gam, #formDificuldade {
+        width: 95vw;
+    }
+}
+
+@media (max-width:380px) {
+div.dificuldade span {
+    scale: 0.9;
+}
+}
