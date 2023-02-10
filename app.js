@@ -17,7 +17,7 @@ function geradorAleatorio(difficulty) {
   document.getElementById("jogarDnv").style.display = "none";
   document.getElementById("chute").placeholder = "chute um numero";
   document.getElementById("chute").disabled = false
-
+  tentativas = 0
 
 // coloca o jogo na tela e tira o form das dificuldades
   document.getElementById("formDificuldade").style.display = "none";
